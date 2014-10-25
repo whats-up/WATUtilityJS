@@ -1,0 +1,38 @@
+{
+  "name": "watutility",
+  "version": "1.0.0",
+  "description": "javascript utility",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "javascript",
+    "coffeeScript"
+  ],
+  "dependencies": {
+    "async": "~0.9.0",
+    "colors": "^1.0.2",
+    "comma-separated-values": "^3.6.0",
+    "iconv": "^2.1.4",
+    "jschardet": "^1.1.0",
+    "moment": "~2.8.3",
+    "request": "^2.45.0",
+    "underscore": "~1.7.0"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.8.0",
+    "chai": "~1.9.2",
+    "gulp-util": "~3.0.1",
+    "gulp": "~3.8.8",
+    "gulp-clean": "~0.3.1",
+    "gulp-coffee": "~2.2.0",
+    "gulp-if": "~1.2.5",
+    "gulp-uglify": "~1.0.1",
+    "gulp-plumber": "~0.6.6",
+    "run-sequence": "~1.0.1",
+    "gulp-mocha": "~1.1.1"
+  },
+  "author": "",
+  "license": "MIT"
+}
