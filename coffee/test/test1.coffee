@@ -2,7 +2,7 @@ watutility = require "../index"
 _ = require 'underscore'
 
 ###
-digitsCheck(number)
+digitCheck(number)
   数値の小数点以下の桁数を戻す
 引数
   number:数値
@@ -11,14 +11,14 @@ digitsCheck(number)
 ###
 
 # examples
-console.log "digitsCheck examples"
-console.log  watutility.digitsCheck(1) # 0
-console.log  watutility.digitsCheck(2.34) # 2
-console.log  watutility.digitsCheck(5.67890) # 4
+console.log "digitCheck examples"
+console.log  watutility.digitCheck(1) # 0
+console.log  watutility.digitCheck(2.34) # 2
+console.log  watutility.digitCheck(5.67890) # 4
 
 
 ###
-digitsCheckWithArray(arr)
+digitCheckWithArray(arr)
   arrayに格納された数値の情報を戻す
 引数
   arr:数値が格納された配列
@@ -26,12 +26,12 @@ digitsCheckWithArray(arr)
   object:
   {max:(小数点以下の桁数の最大値),min:(小数点以下の桁数の最小値)}
 ###
-console.log "digitsCheckWithArray examples"
+console.log "digitCheckWithArray examples"
 # 引数が配列の場合
 arr1 =[1.23, 4.5, 5.6789541215420]
-console.log watutility.digitsCheckWithArray(arr1) # { max: 12, min: 1 }
+console.log watutility.digitCheckWithArray(arr1) # { max: 12, min: 1 }
 # 引数がobjectの場合
-console.log watutility.digitsCheckWithArray({
+console.log watutility.digitCheckWithArray({
   name:"William"
   age:43
   score:75.45
@@ -44,7 +44,7 @@ arr2=[
   {name:"Robert", age:38,score:43.2345}
   {name:"Bellamy", age:25,score:63.2}
 ]
-console.log watutility.digitsCheckWithArray(_.map arr2,(o)->o.score)
+console.log watutility.digitCheckWithArray(_.map arr2,(o)->o.score)
 # { max: 4, min: 1 }
 ###
 objectToSql(tablename,arr,option)

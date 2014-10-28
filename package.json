@@ -1,6 +1,10 @@
 {
   "name": "watutility",
-  "version": "1.0.0",
+  "version": "0.0.1",
+  "repository" : {
+        "type" : "git",
+        "url" : "https://github.com/whats-up/WATUtilityJS"
+    },
   "description": "javascript utility",
   "main": "index.js",
   "scripts": {
@@ -11,13 +15,9 @@
     "coffeeScript"
   ],
   "dependencies": {
-    "async": "~0.9.0",
-    "colors": "^1.0.2",
-    "comma-separated-values": "^3.6.0",
     "iconv": "^2.1.4",
     "jschardet": "^1.1.0",
     "moment": "~2.8.3",
-    "request": "^2.45.0",
     "underscore": "~1.7.0"
   },
   "devDependencies": {
@@ -33,6 +33,6 @@
     "run-sequence": "~1.0.1",
     "gulp-mocha": "~1.1.1"
   },
-  "author": "",
+  "author": "@__whats",
   "license": "MIT"
 }

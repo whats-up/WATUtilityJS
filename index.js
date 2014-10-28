@@ -1,18 +1,14 @@
 (function() {
-  var EventEmitter, Iconv, csv, jschardet, _;
-
-  EventEmitter = require('events').EventEmitter;
+  var Iconv, jschardet, _;
 
   _ = require('underscore');
-
-  csv = require("comma-separated-values");
 
   jschardet = require('jschardet');
 
   Iconv = require('iconv').Iconv;
 
   module.exports = {
-    digitsCheck: function(num) {
+    digitCheck: function(num) {
       var arr;
       if (typeof num !== "number") {
         return null;
@@ -25,7 +21,7 @@
         return 0;
       }
     },
-    digitsCheckWithArray: function(arr) {
+    digitCheckWithArray: function(arr) {
       var first, max, min;
       max = void 0;
       min = void 0;
@@ -34,7 +30,7 @@
         return function(o) {
           var i;
           if (_.isNumber(o)) {
-            i = _this.digitsCheck(o);
+            i = _this.digitCheck(o);
             if (first) {
               min = i;
               max = i;

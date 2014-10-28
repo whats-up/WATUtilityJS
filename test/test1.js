@@ -7,7 +7,7 @@
 
 
   /*
-  digitsCheck(number)
+  digitCheck(number)
     数値の小数点以下の桁数を戻す
   引数
     number:数値
@@ -15,17 +15,17 @@
     小数点以下の桁数
    */
 
-  console.log("digitsCheck examples");
+  console.log("digitCheck examples");
 
-  console.log(watutility.digitsCheck(1));
+  console.log(watutility.digitCheck(1));
 
-  console.log(watutility.digitsCheck(2.34));
+  console.log(watutility.digitCheck(2.34));
 
-  console.log(watutility.digitsCheck(5.67890));
+  console.log(watutility.digitCheck(5.67890));
 
 
   /*
-  digitsCheckWithArray(arr)
+  digitCheckWithArray(arr)
     arrayに格納された数値の情報を戻す
   引数
     arr:数値が格納された配列
@@ -34,13 +34,13 @@
     {max:(小数点以下の桁数の最大値),min:(小数点以下の桁数の最小値)}
    */
 
-  console.log("digitsCheckWithArray examples");
+  console.log("digitCheckWithArray examples");
 
   arr1 = [1.23, 4.5, 5.6789541215420];
 
-  console.log(watutility.digitsCheckWithArray(arr1));
+  console.log(watutility.digitCheckWithArray(arr1));
 
-  console.log(watutility.digitsCheckWithArray({
+  console.log(watutility.digitCheckWithArray({
     name: "William",
     age: 43,
     score: 75.45
@@ -62,7 +62,7 @@
     }
   ];
 
-  console.log(watutility.digitsCheckWithArray(_.map(arr2, function(o) {
+  console.log(watutility.digitCheckWithArray(_.map(arr2, function(o) {
     return o.score;
   })));
 

@@ -1,18 +1,9 @@
-
-
-{EventEmitter} = require 'events'
-# request = require('request')
 _ = require 'underscore'
-# path = require 'path'
-# fs = require 'fs'
-# exec =  require('child_process').exec
-# async = require 'async'
-csv = require("comma-separated-values")
 jschardet = require('jschardet')
 Iconv  = require('iconv').Iconv
 
 module.exports =
-  digitsCheck:(num)->
+  digitCheck:(num)->
     unless typeof num is "number"
       return null
     num = String(num)
@@ -21,13 +12,13 @@ module.exports =
       return arr[1].length
     else
       return 0
-  digitsCheckWithArray:(arr)->
+  digitCheckWithArray:(arr)->
     max = undefined
     min = undefined
     first = true
     _.each arr,(o)=>
       if _.isNumber(o)
-        i = @digitsCheck(o)
+        i = @digitCheck(o)
         if first
           min = i
           max = i
